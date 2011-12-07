@@ -17,7 +17,7 @@ group :development do
 end
 ```
 
-Mount the engine within your `config/routes.rb` file. It'd be smart to limit it only to the development environment as demonstrated below.
+Mount the engine within your `config/routes.rb` file. It's recommended to limit it to only the development environment as demonstrated below.
 
 ```ruby
 Example::Application.routes.draw do
