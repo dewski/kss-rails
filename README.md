@@ -45,7 +45,7 @@ But if you're looking to add more layout styles or updating the templates, you c
 
 ## Credits
 
-All credit goes to Kyle Neath for creating the KSS gem and hopefully this allow people to create styleguides for every site they work on without much effort.
+All credit goes to Kyle Neath for creating the KSS gem and hopefully this will allow people to create styleguides for every site they work on with little to no additional effort.
 
 ## Note on Patches/Pull Requests
 
