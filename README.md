@@ -17,7 +17,7 @@ group :development do
 end
 ```
 
-Run the install generator:
+Run the install generator which will copy over some initial templates for you to base your styleguide definitions off of. There may be some extra changes to the layouts that you need to do, but that is dependent on how crazy your application is.
 
 ```
 rails generate kss:install
