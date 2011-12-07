@@ -9,7 +9,7 @@ Install the gem:
 gem install kss-rails
 ```
 
-Add it to the development group within the `Gemfile`:
+Add it to the development group within the `Gemfile` and re-bundle:
 
 ```ruby
 group :development do
@@ -17,7 +17,13 @@ group :development do
 end
 ```
 
-Mount the engine within your routes file. It's recommended you limit it to only the development environment as demonstrated below.
+Run the install generator:
+
+```
+rails generate kss:install
+```
+
+The install generator will have already appended the route for KSS Rails for you at the '/kss' URL, but if you'd like to change that you can within your routes file.
 
 ```ruby
 Example::Application.routes.draw do
@@ -36,6 +42,10 @@ Please visit the [KSS repo](https://github.com/kneath/kss) for further documenta
 Out of the box KSS Rails has built in templates, stylesheets and javascripts that you can use without any customization just fine.
 
 But if you're looking to add more layout styles or updating the templates, you can create your own copy within your application at any of the paths within the [app folder](https://github.com/dewski/kss-rails/tree/master/app).
+
+## Credits
+
+All credit goes to Kyle Neath for creating the KSS gem and hopefully this allow people to create styleguides for every site they work on without much effort.
 
 ## Note on Patches/Pull Requests
 
