@@ -29,6 +29,8 @@ end
 
 That's it, restart your app and visit `http://yoururl/kss` (or whichever URL you choose).
 
+Please visit the [KSS repo](https://github.com/kneath/kss) for further documentation and helpful tips.
+
 ## Customizing
 
 Out of the box KSS Rails has built in templates, stylesheets and javascripts that you can use without any customization just fine.
