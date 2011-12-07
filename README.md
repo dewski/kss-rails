@@ -17,7 +17,7 @@ group :development do
 end
 ```
 
-Mount the engine within your `config/routes.rb` file. It's recommended to limit it to only the development environment as demonstrated below.
+Mount the engine within your routes file. It's recommended you limit it to only the development environment as demonstrated below.
 
 ```ruby
 Example::Application.routes.draw do
@@ -27,7 +27,7 @@ Example::Application.routes.draw do
 end
 ```
 
-That's it, open up your app and visit `http://yoururl/kss` and you will see your new styleguide.
+That's it, restart your app and visit `http://yoururl/kss` (or whichever URL you choose).
 
 ## Customizing
 
