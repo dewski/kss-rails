@@ -34,3 +34,14 @@ That's it, open up your app and visit `http://yoururl/kss` and you will see your
 Out of the box KSS Rails has built in templates, stylesheets and javascripts that you can use without any customization which will fine.
 
 But if you're looking to add more functionality or updating the templates, you can create your own copy within your application at any of the paths within the [app folder](https://github.com/dewski/kss-rails/tree/master/app).
+
+## Note on Patches/Pull Requests
+
+- Fork the project.
+- Make your feature addition or bug fix.
+- Add tests for it. This is important so I don't break it in a future version unintentionally.
+- Commit, do not mess with Rakefile, version, or history. (if you want to have your own version, that is fine but bump version in a commit by itself in another branch so I can ignore when I pull)
+- Send me a pull request. Bonus points for topic branches.
+
+## Copyright
+Copyright © 2011 Garrett Bjerkhoel. See [MIT-LICENSE](http://github.com/dewski/kss-rails/blob/master/MIT-LICENSE) for details.
