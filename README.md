@@ -31,9 +31,9 @@ That's it, restart your app and visit `http://yoururl/kss` (or whichever URL you
 
 ## Customizing
 
-Out of the box KSS Rails has built in templates, stylesheets and javascripts that you can use without any customization which will fine.
+Out of the box KSS Rails has built in templates, stylesheets and javascripts that you can use without any customization just fine.
 
-But if you're looking to add more functionality or updating the templates, you can create your own copy within your application at any of the paths within the [app folder](https://github.com/dewski/kss-rails/tree/master/app).
+But if you're looking to add more layout styles or updating the templates, you can create your own copy within your application at any of the paths within the [app folder](https://github.com/dewski/kss-rails/tree/master/app).
 
 ## Note on Patches/Pull Requests
 
