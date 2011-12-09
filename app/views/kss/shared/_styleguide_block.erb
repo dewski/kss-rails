@@ -16,7 +16,7 @@
   <% section.modifiers.each do |modifier| %>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name"><%= modifier.name %></span>
-      <%= example_html.sub('$modifier_class', " #{modifier.class_name}").html_safe %>
+      <%= example_html.gsub('$modifier_class', "#{modifier.class_name}").html_safe %>
     </div>
   <% end %>
 </div>
