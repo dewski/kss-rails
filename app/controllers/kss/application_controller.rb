@@ -1,5 +1,7 @@
 module Kss
   class ApplicationController < ::ApplicationController
+    layout 'kss/application'
+    
     private
     
     def styleguide
