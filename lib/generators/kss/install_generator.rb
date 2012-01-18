@@ -3,7 +3,7 @@ require 'rails/generators/base'
 module Kss
   class InstallGenerator < Rails::Generators::Base
     source_root File.expand_path('../../templates', __FILE__)
-    desc "KSS Rails Install"
+    desc 'KSS Rails Install'
 
     def install_steps
       copy_file 'index.html.erb', 'app/views/kss/home/index.html.erb'
