@@ -53,14 +53,14 @@ nav.kss-nav{
   margin-left:-200px;
   width:160px;
 }
-nav.kss-nav ul{
+nav.kss-nav>ul{
   margin-left:10px;
 }
-nav.kss-nav>li{
+nav.kss-nav>ul>li{
   list-style-type:none;
   margin:10px 0;
 }
-nav.kss-nav>li>a{
+nav.kss-nav>ul>li>a{
   text-decoration:none;
   color:#666;
 }
