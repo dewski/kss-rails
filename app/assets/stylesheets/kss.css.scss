@@ -33,7 +33,7 @@ body{
   font-size:14px;
 }
 
-header{
+.kss-header{
   padding:10px;
 
   font-size:16px;
@@ -43,24 +43,24 @@ header{
   border-bottom:1px solid #ddd;
 }
 
-#wrapper{
+#kss_wrapper{
   padding-left:200px;
   padding-right: 25px;
 }
 
-nav[role=main]{
+nav.kss-nav{
   float:left;
   margin-left:-200px;
   width:160px;
 }
-nav ul{
+nav.kss-nav ul{
   margin-left:10px;
 }
-nav li{
+nav.kss-nav>li{
   list-style-type:none;
   margin:10px 0;
 }
-nav li a{
+nav.kss-nav>li>a{
   text-decoration:none;
   color:#666;
 }
