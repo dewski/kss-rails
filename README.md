@@ -6,14 +6,14 @@ KSS Rails provides a Rails 3 engine for you to mount onto your existing Rails 3 
 Install the gem:
 
 ```
-gem install kss-rails
+gem install kss-rails-alan
 ```
 
 Add it to the development group within the `Gemfile` and re-bundle:
 
 ```ruby
 group :development do
-  gem 'kss-rails'
+  gem 'kss-rails-alan', '~> 1.0.3'
 end
 ```
 
