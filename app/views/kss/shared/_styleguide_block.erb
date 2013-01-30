@@ -13,10 +13,12 @@
   <div class="styleguide-element">
     <%= example_html.html_safe %>
   </div>
+  <pre><code data-language="html"><%= example_html.strip %></code></pre>
   <% section.modifiers.each do |modifier| %>
     <div class="styleguide-element styleguide-modifier">
       <span class="styleguide-modifier-name"><%= modifier.name %></span>
       <%= example_html.gsub('$modifier_class', modifier.class_name).html_safe %>
     </div>
+    <pre><code data-language="html"><%= example_html.gsub('$modifier_class', modifier.class_name).strip %></code></pre>
   <% end %>
 </div>
