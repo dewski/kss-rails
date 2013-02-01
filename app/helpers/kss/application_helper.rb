@@ -7,6 +7,9 @@ module Kss
       raise ArgumentError, "Missing block" unless block_given?
       
       @section = styleguide.section(section)
+
+      raise "KSS styleguide section is nil, is section: '#{section}' defined in your css?" unless @section.raw
+
       content = capture(&block)
       render 'kss/shared/styleguide_block', :section => @section, :example_html => content
     end
