@@ -8,7 +8,9 @@ module Kss
       
       @section = styleguide.section(section)
 
-      raise "KSS styleguide section is nil, is section: '#{section}' defined in your css?" unless @section.raw
+      if !@section.raw
+          raise "KSS styleguide section is nil, is section '#{section}' defined in your css?"
+      end
 
       content = capture(&block)
       render 'kss/shared/styleguide_block', :section => @section, :example_html => content
