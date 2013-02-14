@@ -9,7 +9,7 @@ module Kss
       @section = styleguide.section(section)
 
       if !@section.raw
-          raise "KSS styleguide section is nil, is section '#{section}' defined in your css?"
+        raise "KSS styleguide section is nil, is section '#{section}' defined in your css?"
       end
 
       content = capture(&block)
