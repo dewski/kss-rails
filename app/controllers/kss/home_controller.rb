@@ -1,7 +1,7 @@
 module Kss
-  class HomeController < ApplicationController
+  class HomeController < Kss::ApplicationController
     def index
-      
+
     end
   end
 end
