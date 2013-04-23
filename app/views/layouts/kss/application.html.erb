@@ -2,28 +2,31 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title>KSS Styleguide</title>
+    <title>ICIS Styleguide</title>
     <%= stylesheet_link_tag 'kss' %>
     <%= stylesheet_link_tag 'application' %>
     <%= stylesheet_link_tag 'blackboard' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body class="kss-body">
     <header class="kss-header">
-      KSS Styleguide Example
+      ICIS Styleguide
     </header>
 
     <div id="kss_wrapper">
       <nav role="main" class="kss-nav">
         <ul>
           <li><%= link_to 'Home', kss.root_path %></li>
-          <li><%= link_to 'Styleguide', kss.styleguide_path %></li>
+          <% styleguide_sections.each do |section| %>
+            <li><%= link_to section, "#{kss.root_path}section/#{u section.gsub('.', '_')}" %></li>
+          <% end %>
         </ul>
       </nav>
 
       <%= yield %>
-    </div><!-- /#wrapper -->
-    
+
+    </div>
     <%= javascript_include_tag 'kss' %>
     <%= javascript_include_tag 'rainbow' %>
   </body>
