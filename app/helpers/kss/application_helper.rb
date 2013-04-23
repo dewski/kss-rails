@@ -1,11 +1,8 @@
 module Kss
   module ApplicationHelper
-    # Generates a styleguide block. A little bit evil with @_out_buf, but
-    # if you're using something like Rails, you can write a much cleaner helper
-    # very easily.
     def styleguide_block(section, &block)
       raise ArgumentError, "Missing block" unless block_given?
-      
+
       @section = styleguide.section(section)
 
       if !@section.raw
@@ -14,6 +11,15 @@ module Kss
 
       content = capture(&block)
       render 'kss/shared/styleguide_block', :section => @section, :example_html => content
+    end
+
+    def render_styleguide_section(section_name)
+      partial_name = section_name.split(' ')[1..-1].join('_').downcase
+      render "kss/sections/#{partial_name}"
+    end
+
+    def styleguide_sections
+      styleguide.sections.keys.sort
     end
   end
 end
