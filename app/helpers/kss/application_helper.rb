@@ -19,7 +19,7 @@ module Kss
     end
 
     def styleguide_sections
-      styleguide.sections.keys
+      styleguide.sections.keys.sort
     end
   end
 end
