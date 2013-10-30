@@ -15,5 +15,15 @@ module Kss
       content = capture(&block)
       render 'kss/shared/styleguide_block', :section => @section, :example_html => content
     end
+
+    def styleguide_entry(section)
+      raise ArgumentError, 'Missing Entry' unless section
+
+      @section = styleguide.section(section)
+
+      raise "KSS Styleguide section is nil, is section '#{section}' defined in your css?" unless @section.raw
+
+      render 'kss/shared/styleguide_entry', :section => @section
+    end
   end
 end
