@@ -1,6 +1,13 @@
-<div class="styleguide-example<% unless section.filename.nil? then ' pending' end %>">
-  <h3><%= section.section %><% unless section.filename.nil? %> <em><%= section.filename %></em><% end %></h3>
-  <div class="styleguide-description">
-    <p><%= section.description %></p>
-  </div>
+<div class="styleguide-example<%= unless section.raw then ' pending' end %>">
+  <% if section.raw %>
+    <h3><%= section.section %> <em><%= section.filename %></h3>
+    <div class="styleguide-description">
+      <%= section.description %>
+    </div>
+  <% else %>
+    <h3><%= section.section %></h3>
+    <p>
+      Section <%= section.section %> has not yet been created. Please add documentation for this section.
+    </p>
+  <% end %>
 </div>
