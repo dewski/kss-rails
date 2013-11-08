@@ -1,3 +1,5 @@
+require 'ostruct'
+
 module Kss
   module ApplicationHelper
     # Generates a styleguide block. A little bit evil with @_out_buf, but
@@ -18,7 +20,7 @@ module Kss
 
     def styleguide_entry(section)
       @section = styleguide.section(section)
-      binding.pry
+      @section = OpenStruct.new({section: section}) unless @section.raw
       render 'kss/shared/styleguide_entry', :section => @section
     end
   end
