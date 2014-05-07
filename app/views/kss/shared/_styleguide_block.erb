@@ -11,7 +11,7 @@
     <% end %>
   </div>
   <div class="styleguide-element">
-    <%= example_html.html_safe %>
+    <%= example_html.gsub('$modifier_class','').html_safe %>
   </div>
   <pre><code data-language="html"><%= example_html.strip %></code></pre>
   <% section.modifiers.each do |modifier| %>
